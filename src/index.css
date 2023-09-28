@@ -1,0 +1,26 @@
+:root {
+  
+font-family: 'REM', sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #f1cb6c;
+}
+
+body {
+  place-items: center;
+  color: #f1cb6c;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Anton', sans-serif;
+font-family: 'REM', sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
