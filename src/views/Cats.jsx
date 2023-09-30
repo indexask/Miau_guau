@@ -4,45 +4,45 @@ import { MyContext } from "../context/MyContext"
 
 const ProductList = () => {
   const chile = new Intl.NumberFormat("es-CL")
-  const { pizzas } = useContext(MyContext)
-  const { allProducts, setAllProducts } = useContext(MyContext)
+  const { products } = useContext(MyContext)
+  const { catProducts, setcatProducts } = useContext(MyContext)
   const { countProducts, setCountProducts } = useContext(MyContext)
   const { total, setTotal } = useContext(MyContext)
 
-  const onAddProduct = (pizza) => {
-    if (allProducts.find((item) => item.id == pizza.id)) {
-      const products = allProducts.map((item) =>
-        item.id === pizza.id ? { ...item, qty: item.qty + 1 } : item
+  const onAddProduct = (product) => {
+    if (catProducts.find((item) => item.id == product.id)) {
+      const products = catProducts.map((item) =>
+        item.id === product.id ? { ...item, qty: item.qty + 1 } : item
       )
-      setTotal(total + pizza.price * pizza.qty)
-      setCountProducts(countProducts + pizza.qty)
-      return setAllProducts([...products])
+      setTotal(total + product.price * product.qty)
+      setCountProducts(countProducts + product.qty)
+      return setcatProducts([...products])
     }
 
-    setTotal(total + pizza.price * pizza.qty)
-    setCountProducts(countProducts + pizza.qty)
-    setAllProducts([...allProducts, pizza])
+    setTotal(total + product.price * product.qty)
+    setCountProducts(countProducts + product.qty)
+    setcatProducts([...catProducts, product])
   }
 
   const navigate = useNavigate()
-  const handleClick = (pizza) => {
-    navigate(`/${pizza.id}`)
+  const handleClick = (product) => {
+    navigate(`/${product.id}`)
   }
 
   return (
     <div className="product-list-container">
       <div className="product-list">
-        {pizzas.map((pizza) => (
-          <div className="product-card" id={pizza.id} key={pizza.id}>
-            <div className="img-container" onClick={() => handleClick(pizza)}>
-              <img src={pizza.img} alt={pizza.name} />
+        {products.map((product) => (
+          <div className="product-card" id={product.id} key={product.id}>
+            <div className="img-container" onClick={() => handleClick(product)}>
+              <img src={product.img} alt={product.name} />
             </div>
-            <h2 onClick={() => handleClick(pizza)}>
-              {pizza.name.charAt(0).toUpperCase() + pizza.name.slice(1)}
+            <h2 onClick={() => handleClick(product)}>
+              {product.name.charAt(0).toUpperCase() + product.name.slice(1)}
             </h2>
-            <p>{pizza.ingredients.join(", ")}</p>
-            <button onClick={() => onAddProduct(pizza)}>
-              Agregar ${chile.format(pizza.price)}
+            <p>{product.ingredients.join(", ")}</p>
+            <button onClick={() => onAddProduct(product)}>
+              Agregar ${chile.format(product.price)}
             </button>
           </div>
         ))}
