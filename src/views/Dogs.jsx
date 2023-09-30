@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
 import { MyContext } from "../context/MyContext"
 
-const ProductList = () => {
+const Dogs = () => {
   const chile = new Intl.NumberFormat("es-CL")
   const { products } = useContext(MyContext)
   const { dogProducts, setdogProducts } = useContext(MyContext)
@@ -51,4 +51,4 @@ const ProductList = () => {
   )
 }
 
-export default ProductList
+export default Dogs
