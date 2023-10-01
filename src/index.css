@@ -14,13 +14,8 @@ a:hover {
 
 body {
   place-items: center;
-  color: #f1cb6c;
-  background-color: rgb(0, 0, 0);
+  color: #000000;
+  background-color: rgb(255, 255, 255);
   font-family: 'Anton', sans-serif;
 font-family: 'REM', sans-serif;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
