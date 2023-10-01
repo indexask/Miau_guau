@@ -6,8 +6,8 @@ import CardsPrice from "../components/CardsPrice"
 import CardsPriceWeek from "../components/CardsPriceWeek"
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWifi, faLocationCrosshairs, faHotTub, faTv, faBellConcierge, faUserGroup, faCar, faTemperature1, faCreditCard, faMobileScreenButton, faPhoneFlip, faEnvelope, faCopyright, faPhone, faArrowDown, faSortDown, faLocationPin, faLocationDot, faMapLocationDot, } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faFacebookF, faFacebookMessenger, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faMobileScreenButton, faEnvelope, faCopyright, faPhone, faSortDown, faLocationDot, faMapLocationDot, } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Services from "../components/Service";
 
 
@@ -59,144 +59,6 @@ export default function Home() {
           <a className="iconFijo" href="https://api.whatsapp.com/send?phone=56993210973&text=Hola%20Motel%20La%20Pasi%C3%B3n%2C%20vengo%20de%20tu%20pagina%20web%20y%20quiero%20mas%20informaci%C3%B3n%20%F0%9F%98%8D"><FontAwesomeIcon icon={faWhatsapp} /></a>
         </div >
       </div >
-
-
-      <div>
-        <h3  className="price">PRECIOS</h3>
-            <ul className="ul">
-              <li className="price-suites" onClick ={funcionsila}>
-                <div className="flexi">
-                  <h3></h3>
-                  <h3 className="m-0">DE DOMINGO A JUEVES</h3>
-                  <h3 className="arrow"><FontAwesomeIcon icon={faSortDown}/></h3>
-                </div>
-              </li>
-            </ul>
-          <div id="div1" className="divtab" ><div className="CardsPrice flex-box">
-
-            <CardsPrice className="CardsPrice" />
-
-          <Carousel className="carousel-precios">
-        <Carousel.Item>
-        <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Ejecutiva</h2>
-            <h1 className="Cards-Price-Element">$42.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$53.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div> 
-      </Carousel.Item>
-
-      <Carousel.Item>
-      <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element text-dark" >Suite Tantra</h2>
-            <h1 className="Cards-Price-Element">$53.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$58.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div>
-      </Carousel.Item>
-
-      
-      <Carousel.Item>
-      <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Jacuzzi</h2>
-            <h1 className="Cards-Price-Element">$70.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$90.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-      <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Jacuzzi Vip</h2>
-            <h1 className="Cards-Price-Element">$83.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$95.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div>
-      </Carousel.Item>
-    </Carousel>
-            
-          </div>
-        </div>
-          <ul className="ul">
-
-            <li className="price-suites" onClick ={funcionsilaWeek}>
-              <div className="flexi">
-                <h3></h3>
-                <h3 className="m-0">VIERNES, SABADO Y VISPERAS DE FESTIVO </h3>
-                <h3 className="arrow"><FontAwesomeIcon  icon={faSortDown}/></h3>
-              </div>
-            </li>
-          </ul>
-            <div id="div2" className="tab" ><div className="CardsPriceWeek flex-box">
-            <CardsPriceWeek />
-
-            <Carousel className="carousel-precios">
-        <Carousel.Item>
-        <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Ejecutiva</h2>
-            <h1 className="Cards-Price-Element">$47.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$59.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div> 
-      </Carousel.Item>
-
-      <Carousel.Item>
-      <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Tantra</h2>
-            <h1 className="Cards-Price-Element">$60.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$63.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div>
-      </Carousel.Item>
-
-      
-      <Carousel.Item>
-      <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Jacuzzi</h2>
-            <h1 className="Cards-Price-Element">$85.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$99.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item>
-      <div className="Cards-Pricee">
-            <div className="background-cards-price">
-            <h2 className="Cards-Price-Tittlee Cards-Price-Element" >Suite Jacuzzi Vip</h2>
-            <h1 className="Cards-Price-Element">$99.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">3 HORAS DE DOMINGO A JUEVES</p>
-            <h1  className="Cards-Price-Element">$110.000</h1>
-            <p  className="Cards-Price-Element desc-hrs">12 HORAS DE DOMINGO A JUEVES</p>
-            </div>
-        </div>
-      </Carousel.Item>
-    </Carousel>
-          </div>
-        </div>
-      </div>
-
-
 
 
 
@@ -257,20 +119,13 @@ export default function Home() {
               </div>
             </div>
 
-
-
-
           </div>
 
-          
-
+        
           <footer>
             
             <h6 className="d-inline-block"><FontAwesomeIcon className="iconContact text-dark" icon={faCopyright} /> TODO LOS DERECHOS RESERVADOS MOTEL LA PASION</h6>
           </footer>
-
-
-
       </div>
       );
 }
